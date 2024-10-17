@@ -1,2 +1,4 @@
 ### Hanwool_v2
-Git check by 2no 
+
+2024-10-17
+Landing Page Directory Setting - Done (Split .js & .css)

@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from './Header';
-import Hero from './Hero';
-import Services from './Services';
-import Testimonials from './Testimonials';
-import CTA from './CTA';
-import News from './News';
-import Footer from './Footer';
+import Header from '../Header/Header';
+import Hero from '../Hero/Hero';
+import Services from '../Services/Services';
+import Testimonials from '../Testimonials/Testimonials';
+import CTA from '../CTA/CTA';
+import News from '../News/News';
+import Footer from '../Footer/Footer';
 import './AnalysisCompany.css';
 
 const AnalysisCompany = () => {

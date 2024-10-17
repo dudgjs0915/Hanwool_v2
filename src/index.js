@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import AnalysisCompany from './landingpage/AnalysisCompany';
+import AnalysisCompany from './landingpage/Main/AnalysisCompany';
 import reportWebVitals from './reportWebVitals';
 import index from './index.css';
 
