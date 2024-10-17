@@ -1,17 +1,9 @@
 .header {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-  }
-  
-  .header .container {
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
   }
   
   .logo {
@@ -19,12 +11,14 @@
     align-items: center;
     gap: 10px;
     font-weight: bold;
+    padding-left: 20vw;
   }
-  
+    
   .nav {
     display: flex;
-    gap: 30px;
+    gap: 30px; /* Increased gap between nav items */
     align-items: center;
+    padding-right: 20vw;
   }
   
   .nav-link {
@@ -40,21 +34,39 @@
     cursor: pointer;
   }
   
+  .consultation-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
   @media (max-width: 768px) {
     .header .container {
       flex-direction: column;
-      align-items: center;
-      padding: 0 20px;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    .logo, .nav-container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+    .nav-container {
+      margin-top: 20px;
+      width: 100%;
     }
   
     .nav {
       flex-direction: column;
-      align-items: center;
-      margin-top: 20px;
+      align-items: flex-start;
       gap: 15px;
     }
   
-    .cta-button {
+    .consultation-button {
       margin-top: 20px;
     }
   }
