@@ -1,8 +1,13 @@
+.analysis-company {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #e6f7f2, #ffffff);
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
 .container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  font-family: 'Arial', sans-serif;
 }
 
 body {
@@ -18,12 +23,12 @@ body {
 }
 
 .primary-button {
-  background-color: #007bff;
+  background-color: #000;
   color: #fff;
 }
 
 .secondary-button {
-  background-color: #f8f9fa;
-  color: #007bff;
-  border: 1px solid #007bff;
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
 }

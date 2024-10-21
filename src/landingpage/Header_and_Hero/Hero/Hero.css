@@ -1,0 +1,83 @@
+.hero {
+  background-color : transparent;
+
+  /* padding: 60px 0; */
+}
+
+.hero-content {
+  background-color : transparent;
+  max-width: 1200px;
+  margin-top : 10vh;
+  padding: 0 3vw;
+  text-align: left;
+  margin-bottom: 15vh;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.hero-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  color: #555;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.consultation-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.consultation-button:hover {
+  background-color: #333;
+}
+
+.details-button {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.details-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* 브랜드 로고 섹션 스타일 */
+.brand-logos {
+  width: 100%; /* 섹션을 전체 화면에 맞춤 */
+  display: flex;
+  justify-content: center; /* 이미지를 가운데 정렬 */
+  align-items: center;
+  /* padding: 20px 0; */
+  background: white; /* 배경 색상 */
+}
+
+/* 이미지가 섹션에 꽉 차게 설정 */
+.brand-logos-image {
+  width: 100%; /* 이미지의 너비를 부모 컨테이너에 맞춤 */
+  height: auto; /* 비율을 유지하면서 높이 자동 조절 */
+  object-fit: cover; /* 컨테이너에 꽉 차도록 설정 */
+}
+
