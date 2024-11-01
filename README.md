@@ -6,3 +6,6 @@
 
 ## 2024-10-22
 - Header & Hero Master - Done
+
+## 2024-11-01
+- Main Page Prototype - Done

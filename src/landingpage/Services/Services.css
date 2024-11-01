@@ -1,20 +1,60 @@
-.services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    padding: 60px 0;
-  }
-  
-  .service-card {
-    background-color: #f9f9f9;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .learn-more {
-    display: inline-block;
-    margin-top: 15px;
-    color: #007bff;
-    text-decoration: none;
-  }
+.service-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  margin-top : 5vh;
+  margin-bottom : 5vh;
+}
+
+.service-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top : 4vh;
+  margin-left : 3vw;
+  margin-bottom: 7vh;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 330px); /* Fixed column width */
+  gap: 10px;
+  justify-content: center; /* Center-align the grid when there is extra space */
+}
+
+.service-card {
+  background-color: trans;
+  /* border: 1px solid #000; */
+  margin-top : 1vh;
+  margin-bottom : 1vh;
+  border-radius: 8px;
+  padding: 20px;  
+  text-align: left;
+}
+
+.service-icon {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.service-name {
+  font-size: 1.0rem;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+.service-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 10px 0 5px;
+  line-height: 1.5;
+}
+
+.service-link {
+  font-size: 0.9rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.service-link:hover {
+  text-decoration: underline;
+}

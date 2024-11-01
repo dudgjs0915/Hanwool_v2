@@ -1,29 +1,44 @@
 import React from 'react';
 import './News.css';
+import news1 from '../.images/news1.jpg';
+import news2 from '../.images/news2.jpg';
+import news3 from '../.images/news3.jpg';
 
-const News = () => {
+const newsItems = [
+  {
+    title: '한울생명과학, 혁신적 암 진단 키트 개발 성공',
+    description: '간단한 혈액 검사항으로 조기 암 진단이 가능한 혁신적인 진단 키트 개발에 성공했습니다. 이번 성과로 암 조기 발견 및 생존율 향상에 크게 기여할 것으로 기대됩니다.',
+    date: '2023년 7월 15일',
+    image: news1,
+  },
+  {
+    title: '한울생명과학, 글로벌 바이오텍 컨퍼런스서 주목받아',
+    description: '미국 샌프란시스코에서 열린 "2023 글로벌 바이오텍 컨퍼런스"에서 당사의 AI 기반 신약 개발 플랫폼이 큰 주목을 받았습니다. 여러 글로벌 제약사들과의 협력 논의가 진행 중입니다.',
+    date: '2023년 9월 3일',
+    image: news2,
+  },
+  {
+    title: '한울생명과학, 차세대 연구센터 오픈',
+    description: '최첨단 장비를 갖춘 새로운 연구센터를 오픈했습니다. 이를 통해 연구 역량을 한층 강화하고, 글로벌 바이오 기업으로의 도약을 가속화할 예정입니다.',
+    date: '2023년 11월 20일',
+    image: news3,
+  },
+];
+
+export default function News() {
   return (
-    <section className="news">
-      <h2>최신 소식</h2>
+    <div className="news-section">
+      <h2 className="news-title">최신 소식</h2>
       <div className="news-grid">
-        <div className="news-card">
-          <h3>신규 분석 장비 도입</h3>
-          <p>2024년 3월 15일</p>
-          <p>최신 LC-MS/MS 장비 도입으로 더욱 정밀한 농약 분석이 가능해졌습니다.</p>
-        </div>
-        <div className="news-card">
-          <h3>수질 분석 세미나 개최</h3>
-          <p>2024년 3월 20일</p>
-          <p>4월 10일, 수질 분석 전문가들과 함께 세미나를 개최합니다. 최신 분석 기술과 동향을 공유합니다.</p>
-        </div>
-        <div className="news-card">
-          <h3>ISO 17025 인증 갱신</h3>
-          <p>2024년 3월 5일</p>
-          <p>국제 공인 시험기관 인증인 ISO 17025를 성공적으로 갱신하여 분석 신뢰도를 재확인하였습니다.</p>
-        </div>
+        {newsItems.map((news, index) => (
+          <div className="news-card" key={index}>
+            <img src={news.image} alt={news.title} className="news-image" />
+            <h3 className="news-card-title">{news.title}</h3>
+            <p className="news-description">{news.description}</p>
+            <p className="news-date">{news.date}</p>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
-};
-
-export default News;
+}
