@@ -1,56 +1,55 @@
 .service-section {
-  padding: 40px 20px;
+  padding: 4vw 2vw;
   background-color: #f9f9f9;
-  margin-top : 5vh;
-  margin-bottom : 5vh;
+  margin-bottom : 5vw;
+  height : 35vw;
 }
 
 .service-title {
-  font-size: 1.8rem;
+  font-size: 1.5vw;
   font-weight: bold;
-  margin-top : 4vh;
+  margin-top : 2vw;
   margin-left : 3vw;
-  margin-bottom: 7vh;
+  margin-bottom: 2vw;
 }
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 330px); /* Fixed column width */
-  gap: 10px;
+  grid-template-columns: repeat(auto-fill, 16vw); /* Fixed column width */
+  gap: 1vw;
   justify-content: center; /* Center-align the grid when there is extra space */
 }
 
 .service-card {
-  background-color: trans;
+  background-color: transparent;
   /* border: 1px solid #000; */
-  margin-top : 1vh;
-  margin-bottom : 1vh;
+  /* margin-top : 1vh;
+  margin-bottom : 1vh; */
   border-radius: 8px;
-  padding: 20px;  
+  padding: 2vw;  
   text-align: left;
 }
 
 .service-icon {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  font-size: 1vw;
 }
 
 .service-name {
-  font-size: 1.0rem;
+  font-size: 0.8vw;
   font-weight: bold;
   margin: 0;
   color: #333;
 }
 
 .service-description {
-  font-size: 0.9rem;
+  font-size: 0.7vw;
   color: #666;
-  margin: 10px 0 5px;
+  margin: 2vw 0 1vw;
   line-height: 1.5;
 }
 
 .service-link {
-  font-size: 0.9rem;
+  font-size: 0.7vw;
   color: #000;
   text-decoration: none;
 }

@@ -7,7 +7,7 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <div className="logo">
-          <img src={logo} alt="한울생명과학 로고" className="logo-image" /> <h2> 한울생명과학 </h2>
+          <img src={logo} alt="한울생명과학 로고" className="logo-image" /> <h2 className = "logo_title"> 한울생명과학 </h2>
         </div>
         <div className="right-group">
           <nav className="nav">

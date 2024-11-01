@@ -9,3 +9,4 @@
 
 ## 2024-11-01
 - Main Page Prototype - Done
+- Handle Flexible Screensize - Done

@@ -2,22 +2,27 @@
 .logo {
   display: flex;
   align-items: center; /* 수직 중앙 정렬 */
-  gap: 10px; /* 로고와 텍스트 사이 간격 */
+  gap: 0.5vw; /* 로고와 텍스트 사이 간격을 화면 크기에 비례하게 조정 */
+}
+
+.logo_title{
+  font-size : 1.3vw;
 }
 
 .logo-image {
-  height: 50px;
-  width: auto;
+  height: auto;
+  width: 3vw; /* 화면 너비에 비례하여 로고 크기 조절 */
 }
 
-/* 나머지 스타일 그대로 유지 */
+/* 헤더 스타일 */
 .header {
   background-color: transparent;
-  padding: 15px 0;
+  padding: 1vw 0;
   width: 100%;
   box-sizing: border-box;
 }
 
+/* 전체 컨테이너 스타일 */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -27,24 +32,27 @@
   align-items: center;
 }
 
+/* 오른쪽 그룹 스타일 */
 .right-group {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 30px;
+  gap: 1.5vw; /* 화면 크기에 비례한 간격 */
 }
 
+/* 네비게이션 스타일 */
 .nav {
   display: flex;
-  gap: 30px;
+  gap: 1.5vw; /* 화면 크기에 비례한 간격 */
   align-items: center;
   justify-content: flex-end;
 }
 
+/* 네비게이션 링크 스타일 */
 .nav-link {
   text-decoration: none;
   color: #333;
-  font-size: 16px;
+  font-size: 1vw; /* 화면 크기에 비례한 폰트 크기 */
   transition: color 0.3s ease;
 }
 
@@ -52,36 +60,18 @@
   color: #0056b3;
 }
 
+/* 상담하기 버튼 스타일 */
 .consultation-button {
   background-color: #000;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 0.8vw 1.6vw; /* 화면 크기에 비례한 패딩 */
   cursor: pointer;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 1vw; /* 화면 크기에 비례한 폰트 크기 */
   transition: background-color 0.3s ease;
 }
 
 .consultation-button:hover {
   background-color: #333;
-}
-
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    margin-top: 20px;
-    width: 100%;
-  }
-
-  .consultation-button {
-    margin-top: 10px;
-  }
 }
